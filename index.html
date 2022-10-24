@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" description="Jayson Reales">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://elms.catcollege.edu.ph/theme/image.php/klass/theme/1595474579/favicon" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Computer Arts and Technological College, Inc.</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="logo">
+            <a href="/"><img src="images/catc-logo.jpg" alt="CATC Logo" width="60" height="60"></a>
+        </div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar" id="nav-bar">
+            <ul class="nav">
+                <li><a href="/" class="active ">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#campus">Campus</a></li>
+                <li><a href="#why">Why Us?</a></li>
+                <li>
+                    <a onclick="myFunction()" class="dropbtn">How To?</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">How To Enroll?</a>
+                        <hr>
+                        <a href="#">Scholarships</a>
+                        <a href="#">Requirements</a>
+                    </div>
+                </li>
+                <button class="login" onclick="enroll()">Enroll Now</button>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <div id="container">
+            <span></span>
+        </div>
+        <!-- || HERO SECTION -->
+        <div class="hero">
+            <div class="hero__section">
+                <h3 class="hero__title">Enroll <span>Today</span> and<br>Build <span class="career-text">Solid Career</span><br>with <span class="catc">CAT College<span class="inc">, Inc.</span></span></h3>
+                <a href="http://enroll.catcollege.edu.ph/enrollment/" class="hero__btn">Enroll Now</a>
+                <img src="images/curve-arrow.png" alt="Arrow" class="hero__arrow">
+                <!-- <img src="images/10 SCENE.svg" alt="Studying" class="hero-img"> -->
+            </div>
+        </div>
+        
+        <section id="why" class="why-us" data-aos="zoom-in">
+            <h3 class="title">Why Us?</h3>
+            <description>
+                The  school  is  committed  to  producing  morally  upright  graduates with  quality  education  and   equip  them  with  the  knowledge and skills essential for their dynamic responses to the challenges of the country and of the world. 
+            </description>
+        </section>
+
+        <section id="courses" class="courses">
+            <h3 class="section-heading">Courses Offered</h3>
+
+            <div class="courses__list">
+                <div class="course_one" data-aos="flip-left">
+                    <img src="images/compeng.jpg" width="500" height="400" alt="Course 1">
+                </div>
+                <div class="course-description" data-aos="zoom-in">
+                    <h3 class="c-eng">Computer Engineering</h3>
+                    <p>
+                        Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.<a href="" class="read-more">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="courses__list">
+                <div class="course_two" data-aos="flip-right">
+                    <img src="images/it (2).jpg" width="500" height="400" alt="Course 2">
+                </div>
+                <div class="course-description" data-aos="zoom-in">
+                    <h3 class="c-it">Information Technology</h3>
+                    <p>
+                        Information technology (IT) is a broad professional category covering functions including building communications networks, safeguarding data and information, and troubleshooting computer problems.<a href="" class="read-more">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="courses__list">
+                <div class="course_three" data-aos="flip-right">
+                    <img src="images/ba.jpg" width="500" height="400" alt="Course 2">
+                </div>
+                <div class="course-description" data-aos="zoom-in">
+                    <h3>Business Administration</h3>
+                    <p>
+                        Business administration is the work of managing an organization's resources, time and people. Business administration professionals work to ensure that businesses and organizations are run effectively, efficiently and profitably.<a href="" class="read-more">Read more...</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="see-more">
+                <a href="">See more courses...</a>
+            </div>
+            <hr>
+        </section>
+
+            <section class="campus" id="campus">
+                <h3 class="campus-heading">Campus</h3>
+                <div class="campus-list" data-aos="flip-up">
+
+                    <div class="campus-item card hidden">
+                        <img src="images/school1.jpg" alt="School 1" width="300" height="400">
+                        <div class="info">
+                            <h1>Albay <span>(Main Campus)</span></h1>
+                            <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="campus-item card hidden">
+                        <img src="images/school2.jpg" alt="School 1" width="300" height="400">
+                        <div class="info">
+                            <h1>Legaspi City <span>(Extension)</span></h1>
+                            <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                        </div>
+                    </div>
+
+                    <div class="campus-item card hidden">
+                        <img src="images/school3.jpg" alt="School 1" width="300" height="400">
+                        <div class="info">
+                            <h1>Ligao Campus</h1>
+                            <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                        </div>
+                    </div>
+
+                    <div class="campus-item card hidden">
+                        <img src="images/school4.jpg" alt="School 1" width="300" height="400">
+                        <div class="info">
+                            <h1>Polangui Campus</h1>
+                            <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="">
+                
+            </section>
+
+            <footer data-aos="fade-up">
+                <section class="about">
+                    <figure>
+                        <img src="images/logo-small.png" alt="CATC Logo" width="200" height="50">
+                        <figcaption>
+                            The school is committed to producing morally upright graduates with quality education and equip them with the knowledge and skills essential for their dynamic responses to the challenges of the country and of the world.
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><span>Email: </span><a href = "mailto: abc@example.com">catcollege_registrar@yahoo.com</a></li>
+                        <li><span>Phone number: </span><a href="tel:920-870-5327">0920-870-5327</a></li>
+                        <li><span>Telephone: </span><a href="tel:742-2500">742-2500</a></li>
+                        <li><span>Address: </span><address>Balintawak St,. Albay District, Legaspi City</address></li>
+                    </ul>
+                </section>
+                <section class="links">
+                    <h3>Helpful Links</h3>
+                    <ul>
+                        <li><a href="http://enroll.catcollege.edu.ph/enrollment/">Enrollment</a></li>
+                        <li><a href="http://elms.catcollege.edu.ph/">ELMS</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </section>
+            </footer>
+        </section> 
+
+        <div id="progress">
+            <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+        </div>
+
+    </div>
+    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script> -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html> 
