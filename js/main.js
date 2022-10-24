@@ -73,7 +73,7 @@ window.onclick = function(event) {
 }
 
 /* Detect if user is online or offline */
-const isOnline = () => {
+/* const isOnline = () => {
   const status = window.navigator.onLine;
   if(status) {
     online();
@@ -84,7 +84,7 @@ const isOnline = () => {
   window.addEventListener('online', online);
   window.addEventListener('offline', offline);
 
-  /* function to detect if user is online */
+
   function online(){
       document.getElementById('container').style.backgroundColor = '#22c55e';
       document.querySelector('span').textContent = `You're back online.`;
@@ -94,13 +94,13 @@ const isOnline = () => {
       }, 3000);
   }
 
-  /* function to detect if user is offline */
+
   function offline(){
       document.getElementById('container').style.backgroundColor = '#dc2626';
       document.querySelector('span').textContent = `You're offline. Please connect to the internet.`;
       document.getElementById('container').style.opacity = '1';
   }
-}
+} */
 
 /* || Function Calling */
 showBackBtn();
