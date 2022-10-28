@@ -1,0 +1,465 @@
+@media screen and ((min-width: 1200px) and (max-width: 1400px)){
+    header{
+        padding: 0 50px;
+    }
+
+    
+}
+
+@media screen and ((min-width: 992px) and (max-width: 1200px)) {
+    .hero__section {
+        /* background: url('/images/Illustration/SVG/10\ SCENE.svg'); */
+        background-position: 300px 250px;
+        background-repeat: no-repeat;
+        background-size: 900px 900px;
+    }
+
+    .why-us {
+        /* background: url('/images/undraw_education_f8ru.png'), #dedede; */
+        background-position: 0 225px;
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+    }
+
+    .courses__list {
+        padding: 0 3rem 3rem 0;
+        margin-top: 2rem;
+    }
+
+    .courses__list div {
+        width: 350px;
+        height: 250px;
+    }
+
+    .courses__list img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        height: auto;
+        gap: 30px;
+    }
+
+}
+
+@media screen  and ((min-width: 768px) and (max-width: 992px)) {
+    header{
+        padding: 0 30px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;   
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line {
+        width: 35px;
+        height: 5px;
+        background: #f5f5f5;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line::before { 
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: #f5f5f5;
+        transition: all 0.5s ease-in-out;
+    }
+    .line::after { 
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #f5f5f5;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line::before {
+        transform: translateY(-10px);
+    }
+
+    .line::after {
+        transform: translateY(10px);
+    }
+
+    .hamburger.open .line {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+
+    .hamburger.open .line::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background: #dc2626;
+        width: 40px;
+    }
+
+    .hamburger.open .line::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background: #dc2626;
+        width: 40px;
+    }
+
+    /* .hamburger .line {
+        width: 30px;
+        height: 4px;
+        background: #f5f5f5;
+        margin: 6px 0;
+    } */
+
+    .nav-bar {
+        /* display: none; */
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #1d4ed8;
+        transition: 0.3s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav-bar.active {
+        border-top: 1px solid #f5f5f5;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 999999;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 15px;
+    }
+
+    button.login {
+        margin: 0 auto;
+    }
+
+    .hero__section {
+        /* background: url('/images/Illustration/SVG/10\ SCENE.svg'); */
+        background-position: 200px 400px;
+        background-repeat: no-repeat;
+        background-size: 700px 700px;
+    }
+
+    .inc {
+        display: none;
+    }
+
+    .why-us {
+        /* background: url('/images/undraw_education_f8ru.png'), #dedede; */
+        background-position: 0 270px;
+        background-repeat: no-repeat;
+        background-size: 250px 150px;
+    }
+
+    .why-us description {
+        width: 100vw;
+        font-size: 1rem;
+        padding: 2.5rem;
+        margin: 2rem;
+    }
+
+    .courses__list {
+        padding: 0 3rem 3rem 0;
+        margin-top: 2rem;
+    }
+
+    .courses__list div {
+        width: 300px;
+        height: 200px;
+    }
+
+    .courses__list img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .courses .section-heading {
+        margin-top: 0.5rem;
+    }
+
+    .campus-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        margin: 0 0 3rem 0;
+        gap: 3rem;
+    }
+
+    .card {
+        width: 250px;
+        height: 200px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        font-size: 0.8rem;
+        height: auto;
+        gap: 30px;
+    }
+
+
+}
+
+@media screen and ((min-width: 577px) and (max-width: 767px)){
+    header{
+        padding: 0 30px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;   
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line {
+        width: 35px;
+        height: 5px;
+        background: #f5f5f5;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line::before { 
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: #f5f5f5;
+        transition: all 0.5s ease-in-out;
+    }
+    .line::after { 
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #f5f5f5;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .line::before {
+        transform: translateY(-10px);
+    }
+
+    .line::after {
+        transform: translateY(10px);
+    }
+
+    .hamburger.open .line {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+
+    .hamburger.open .line::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background: #dc2626;
+        width: 40px;
+    }
+
+    .hamburger.open .line::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background: #dc2626;
+        width: 40px;
+    }
+
+    /* .hamburger .line {
+        width: 30px;
+        height: 4px;
+        background: #f5f5f5;
+        margin: 6px 0;
+    } */
+
+    .nav-bar {
+        /* display: none; */
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #1d4ed8;
+        transition: 0.3s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav-bar.active {
+        border-top: 1px solid #f5f5f5;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 999999;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 15px;
+    }
+
+    button.login {
+        margin: 0 auto;
+    }
+
+    .hero__section {
+        /* background: url('/images/Illustration/SVG/10\ SCENE.svg'); */
+        background-position: 250px 225px;
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+    }
+
+    .hero__title {
+        font-size: 2.4rem;
+        font-weight: 900;
+        left: 29px;
+    }
+
+    .hero__title .catc {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .inc {
+        display: none;
+    }
+    
+    .career-text {
+        font-size: 2.9rem;
+    }
+
+    .hero__btn {
+        padding: 10px 20px;
+        left: -50px;
+        top: -10px;
+    }
+
+    .hero__arrow {
+        left: 110px;
+        top: 58%;
+    }
+
+    .why-us {
+        /* background: url('/images/undraw_education_f8ru.png'), #dedede; */
+        background-position: 0 270px;
+        background-repeat: no-repeat;
+        background-size: 250px 150px;
+    }
+
+    .why-us description {
+        width: 100vw;
+        font-size: 1rem;
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    .courses__list div {
+        width: 250px;
+        height: 200px;
+    }
+
+    .courses__list {
+        padding: 3rem 3rem 1rem 3rem;
+    }
+
+    .courses__list img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .c-it {
+        margin-top: 0rem;
+    }
+    
+    .c-eng {
+        margin-top: 0rem;
+    }
+
+    .courses .section-heading {
+        margin-top: .5rem;
+    }
+
+    .read-more {
+        color: #1d4ed8;
+        font-weight: 500;
+    }
+
+    .see-more {
+        margin: 2rem 0;
+        font-size: 1rem;
+    }
+
+    .campus-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        margin: 0 0 3rem 0;
+        gap: 3rem;
+    }
+
+    .card {
+        width: 250px;
+        height: 200px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+        height: 450px;
+    }
+    
+
+}

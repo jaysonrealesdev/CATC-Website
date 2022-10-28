@@ -107,5 +107,5 @@ window.onclick = function(event) {
 showBackBtn();
 closeBtn();
 menuBtn();
-isOnline();
-isActive();
+/* isOnline();
+isActive(); */
