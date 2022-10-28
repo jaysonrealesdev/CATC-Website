@@ -7,9 +7,9 @@
     box-sizing: border-box;
 }
 
-/* a {
+a {
     text-decoration: none;
-} */
+}
 
 .nav {
     list-style: none;
@@ -24,7 +24,7 @@ html {
 }
 
 :root {
-    --MAINCOLOR: #1d4ed8;
+    --MAIN-COLOR: #1d4ed8;
 }
 
 /* || GENERAL STYLES */
@@ -191,7 +191,7 @@ button.login:hover {
 
 .hero__section {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: url('/images/Illustration/SVG/10\ SCENE.svg');
     background-position: 760px -138px;
     background-repeat: no-repeat;
@@ -232,7 +232,7 @@ button.login:hover {
     margin-left: 5rem;
     position: relative;
     left: 22px;
-    top: -30px;
+    top: 30px;
     animation: shakeBtn 5s infinite .5s linear;
 }
 
@@ -254,8 +254,8 @@ button.login:hover {
 
 .hero__arrow {
     position: absolute;
-    top: 56%;
-    left: 220px;
+    top: 65%;
+    left: 200px;
     width: 100px;
     height: 75px;
 }
@@ -335,6 +335,7 @@ button.login:hover {
 
 .courses__list img {
     border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .courses__list div {
@@ -631,22 +632,64 @@ footer li a:hover {
 }
 
 
+/* || COURSES.HTML */
+
+.main-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    border: 1px solid #ccc;
+    width: 900px;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+
 /* || MEDIA QUERY */
-@media screen and (min-width: 1024px){
+/* @media screen and (min-width: 1024px){
     header{
         padding: 0 50px;
     }
 
     
-}
+} */
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
+    header{
+        padding: 0 50px;
+    }
     .hero__section {
         /* background: url('/images/Illustration/SVG/10\ SCENE.svg'); */
         background-position: 300px 250px;
         background-repeat: no-repeat;
         background-size: 900px 900px;
     }
+
+    .hero__btn {
+        padding: 10px 20px;
+        left: 20px;
+        top: 100px;
+    }
+
+    .hero__arrow {
+        left: 180px;
+        top: 63%;
+    }
+      
 
     .why-us {
         /* background: url('/images/undraw_education_f8ru.png'), #dedede; */
@@ -804,6 +847,17 @@ footer li a:hover {
         background-size: 700px 700px;
     }
 
+    .hero__btn {
+        padding: 10px 20px;
+        left: 20px;
+        top: 100px;
+    }
+
+    .hero__arrow {
+        left: 180px;
+        top: 64%;
+    }
+
     .inc {
         display: none;
     }
@@ -820,6 +874,14 @@ footer li a:hover {
         font-size: 1rem;
         padding: 2.5rem;
         margin: 2rem;
+    }
+
+    .courses {
+        margin-top: 2rem;
+    }
+
+    .courses .section-heading {
+        font-size: 2rem;
     }
 
     .courses__list {
@@ -850,6 +912,10 @@ footer li a:hover {
         align-items: center;
         margin: 0 0 3rem 0;
         gap: 3rem;
+    }
+
+    .campus .campus-heading {
+        font-size: 2rem;
     }
 
     .card {
@@ -1009,12 +1075,12 @@ footer li a:hover {
     .hero__btn {
         padding: 10px 20px;
         left: -50px;
-        top: -10px;
+        top: 50px;
     }
 
     .hero__arrow {
         left: 110px;
-        top: 58%;
+        top: 57%;
     }
 
     .why-us {
@@ -1024,11 +1090,19 @@ footer li a:hover {
         background-size: 250px 150px;
     }
 
+    .why-us .title {
+        font-size: 2rem;
+    }
+
     .why-us description {
         width: 100vw;
         font-size: 1rem;
         padding: 2rem;
         margin: 2rem;
+    }
+
+    .courses {
+        margin-top: 2rem;
     }
 
     .courses__list div {
@@ -1055,6 +1129,7 @@ footer li a:hover {
 
     .courses .section-heading {
         margin-top: .5rem;
+        font-size: 2rem;
     }
 
     .read-more {
@@ -1065,6 +1140,10 @@ footer li a:hover {
     .see-more {
         margin: 2rem 0;
         font-size: 1rem;
+    }
+
+    .campus .campus-heading {
+        font-size: 2rem;
     }
 
     .campus-list {
@@ -1101,6 +1180,11 @@ footer li a:hover {
 @media screen and ((min-width: 0px) and (max-width: 640px)){
     header{
         padding: 0 30px;
+    }
+
+    .brand-img {
+        width: 50px;
+        height: 50px;
     }
 
     .hamburger{
@@ -1216,13 +1300,13 @@ footer li a:hover {
     }
 
     .hero__title {
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: 900;
         left: 29px;
     }
 
     .hero__title .catc {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 900;
     }
 
@@ -1231,13 +1315,13 @@ footer li a:hover {
     }
     
     .career-text {
-        font-size: 2.9rem;
+        font-size: 2rem;
     }
 
     .hero__btn {
         padding: 10px 20px;
         left: -50px;
-        top: -80px;
+        top: 0;
     }
 
     .hero__arrow {
@@ -1252,11 +1336,16 @@ footer li a:hover {
         background-size: 200px 100px;
     }
 
+    .why-us .title {
+        font-size: 1.5rem;
+    }
+
     .why-us description {
         width: 100vw;
         font-size: 1rem;
         padding: 2rem;
-        margin: 2rem;
+        margin-top: -1rem;
+        text-align: justify;
     }
 
     .courses__list {
@@ -1267,7 +1356,7 @@ footer li a:hover {
     }
 
     .courses .section-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .courses__list div {
@@ -1278,6 +1367,7 @@ footer li a:hover {
     .courses__list img {
         width: 300px;
         height: 200px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     }
 
     .course-description h3 {
@@ -1310,6 +1400,12 @@ footer li a:hover {
         justify-content: center;
         height: 450px;
         font-size: 0.9rem;
+    }
+
+    footer .about,
+    .contact,
+    .links {
+        padding: 0 1rem;
     }
 
     footer figcaption {
